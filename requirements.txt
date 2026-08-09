@@ -1,0 +1,14 @@
+# Install with:  pip install -r requirements.txt --no-deps
+#
+# --no-deps matters: it stops pip from satisfying face_recognition's
+# "dlib>=19.7" by compiling dlib from source. dlib-bin is the same
+# library as a prebuilt wheel.
+
+setuptools<81            # face_recognition_models needs pkg_resources
+dlib-bin
+face_recognition_models
+face_recognition
+opencv-python
+numpy
+Click
+Pillow
